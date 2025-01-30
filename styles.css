@@ -1,0 +1,416 @@
+:root {
+    --berkeley-blue: #013366ff;
+    --night: #0E0D0Dff;
+    --seasalt: #F8F8F9ff;
+    --ghost-white: #F1EFF4ff;
+    --khaki: #B5B09Dff;
+    --light-grey: #f4f4f4;
+    --primary-blue: #007BFF;
+    --hover-blue: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--light-grey);
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a, #search-button {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eef6fc;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.button, section button, .centered-content button {
+    padding: 10px 20px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover, section button:hover, .centered-content button:hover {
+    background-color: var(--hover-blue);
+}
+
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section .text {
+    flex: 1;
+    margin-right: 10px;
+}
+
+section .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .image img {
+    max-width: 100%;
+    max-height: 300px;
+    width: auto;
+    height: auto;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* Background colors for specific sections */
+#youtube-channel, #terms-of-service, #correction-policy {
+    background-color: #eef6fc;
+}
+
+#submit-news, #newsletter {
+    background-color: #f9f9f9;
+}
+
+.faq {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: var(--light-grey);
+}
+
+.faq .faq-item {
+    margin-bottom: 15px;
+    text-align: left;
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+.faq h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.faq h3:hover {
+    color: var(--primary-blue);
+    transform: scale(1.05);
+}
+
+.faq p {
+    margin: 5px 0 0;
+    color: #555;
+    display: none;
+    line-height: 1.6;
+}
+
+.faq .faq-item.active p {
+    display: block;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--light-grey);
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--primary-blue);
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-socials {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 2rem;
+    transition: color 0.2s;
+}
+
+.footer-socials a:hover {
+    color: var(--primary-blue);
+}
+
+#youtube-channel .content, #newsletter .content {
+    flex-direction: row-reverse;
+}
+
+#submit-news .content {
+    flex-direction: row;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--light-grey);
+}
+
+.centered-content h2, .centered-content p {
+    color: #333;
+}
+
+.centered-content p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#terms-of-service .content, #correction-policy .content {
+    flex-direction: column;
+}
+
+#terms-of-service .text, #correction-policy .text {
+    flex: 1;
+    margin-right: 0;
+}
+
+#terms-of-service button, #correction-policy button {
+    margin-top: 20px;
+}
+
+/* Increase text size and center content for specific sections */
+#submit-news, #newsletter, #youtube-channel, .hero {
+    padding: 80px 20px; /* Increase padding to move sections closer to center */
+    text-align: center; /* Ensure text is centered */
+}
+
+#submit-news, #newsletter, #youtube-channel {
+    font-size: 1.2rem; /* Increase text size */
+}
+
+.hero {
+    font-size: 1.5rem; /* Increase text size for hero section */
+    background-color: #eef6fc;
+}
+
+.hero h1, #submit-news h2, #newsletter h2, #youtube-channel h2 {
+    font-size: 2rem; /* Increase the heading text size */
+    margin-bottom: 20px;
+}
+
+#submit-news .content, #newsletter .content, #youtube-channel .content {
+    justify-content: center; /* Center the content inside the flex container */
+    align-items: center;
+}
+
+/* Adjust section titles */
+section h2, .hero h1, #submit-news h2, #newsletter h2, #youtube-channel h2 {
+    margin-bottom: 20px; /* Add more space below the headings */
+    font-size: 2rem; /* Make section titles bigger */
+}
+
+/* Adjust content and text alignment */
+#submit-news .text, #newsletter .text, #youtube-channel .text {
+    text-align: center; /* Ensure text is aligned to the center */
+}
+
+/* Make sure the hero image is centered */
+.hero img {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Increase the size of images in these sections */
+.hero img, #submit-news .image img, #newsletter .image img, #youtube-channel .image img {
+    max-width: 200%; /* Increase the max-width to make the images bigger */
+    max-height: 550px; /* Increase the max-height to allow the images to grow */
+    width: auto;
+    height: auto;
+}
+
+/* Optional: Adjust margin to ensure better spacing */
+.hero img, #submit-news .image img, #newsletter .image img, #youtube-channel .image img {
+    margin-bottom: 20px; /* Adjust spacing between image and other content */
+}
+
+/* Header */
+header {
+    background-color: #0E0D0D; /* Dark black background */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Link color in the header */
+header a, header #search-button {
+    color: white; /* White link text */
+}
+
+/* Footer */
+footer {
+    background-color: #0E0D0D; /* Dark black background */
+    border-top: 1px solid #ddd;
+}
+
+/* Link color in the footer */
+footer a {
+    color: white; /* White link text */
+}
+
+/* Footer social media links */
+.footer-socials a {
+    color: white; /* White social media link text */
+}
+
+/* Hover effect for links */
+header a:hover, footer a:hover, .footer-socials a:hover {
+    color: #007BFF; /* Blue color on hover */
+}
+
+/* Footer text */
+footer {
+    color: white; /* Make all text in the footer white */
+}
+
+/* Header text links (already white from previous change) */
+footer a {
+    color: white; /* White link text */
+}
+
+/* Footer section titles */
+.footer-section h3 {
+    color: white; /* White text for footer section titles */
+}
+
+/* Footer social media links */
+.footer-socials a {
+    color: white; /* White social media link text */
+}
+
+/* Hover effect for links */
+footer a:hover, .footer-socials a:hover {
+    color: #007BFF; /* Blue color on hover */
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    section .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        max-width: 90%;
+    }
+
+    .button, section button, .centered-content button {
+        width: 100%;
+        padding: 12px 25px;
+    }
+
+    .footer-socials a {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-bottom: 5px;
+    }
+
+    .hero h1, section h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero img {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-socials a {
+        font-size: 1.5rem;
+    }
+}
+
+
+
