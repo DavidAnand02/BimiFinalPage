@@ -318,7 +318,15 @@ section h2, .hero h1, #submit-news h2, #newsletter h2, #youtube-channel h2 {
     #youtube-channel .text, #submit-news .text, #newsletter .text {
         order: 1; /* Keeps the text above the image */
     }
+
+    /* Scale images to fit the mobile screen */
+    #youtube-channel .image img, #submit-news .image img, #newsletter .image img {
+        max-width: 90%; /* Scale images to 90% of the container */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center the image */
+    }
 }
+
 
 
 
@@ -432,6 +440,7 @@ footer a:hover, .footer-socials a:hover {
         font-size: 1.5rem;
     }
 }
+
 
 
 
