@@ -1,6 +1,5 @@
 
 
-
 :root {
     --berkeley-blue: #013366ff;
     --night: #0E0D0Dff;
@@ -184,12 +183,10 @@ footer {
 
 .footer-section ul li a {
     text-decoration: none;
-    color: var(--primary-blue);
+    color: white;
 }
 
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
+
 
 .footer-socials {
     text-align: center;
@@ -389,7 +386,7 @@ footer a {
 
 /* Hover effect for links */
 footer a:hover, .footer-socials a:hover {
-    color: #007BFF; /* Blue color on hover */
+    color: white; /* Blue color on hover */
 }
 
 /* Mobile responsiveness */
